@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>file Strems</title>
+  </head>
+  <body>
+    <div>213123</div>
+    <h1>dasds</h1>
+    <span>sdas</span>
+    <p>dasdывф ывф</p>
+    <p>dasd</p>
+    <script>
+      const ws = new WebSocket('ws://localhost:3000');
+
+      ws.onopen = () => {
+        console.log('Подключено к WebSocket серверу');
+      };
+      dsa;
+
+      ws.onmessage = (event) => {
+        if (event.data === 'reload') {
+          console.log('Перезагрузка страницы...');
+          location.reload();
+        }
+      };
+
+      ws.onclose = () => {
+        console.log('Отключено от WebSocket сервера');
+      };
+    </script>
+  </body>
+</html>
